@@ -10,7 +10,7 @@ class BookmarksController < ApplicationController
   end
 
   def new
-    @bookmark = Bookmark.find(params[:id])
+    @bookmark = Bookmark.new
   end
 
   def destroy
