@@ -1,5 +1,9 @@
+<h1 class="p-3">Lists page</h1>
+
 <ul class="list-group">
   <% @lists.each do |list| %>
-    <li class="list-group-item"><%= list.name %></li>
+    <li class="list-group-item"><%= link_to list.name, list_path(list) %></li>
   <% end %>
 </ul>
+
+<p class="p-3"><%= link_to "Home page", root_path %></p>
